@@ -6,7 +6,7 @@ body {
   background-color: transparent;
   /* color: #4d4d4d; */
   color: #4d4d4d;
-  font-family: sans-serif;
+  font-family: sans-serif, serif, 'Times New Roman';
 }
 
 /* Header, Navigation Bar, Footer */
