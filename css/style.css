@@ -1432,7 +1432,7 @@ div.database {
 
   div.overview .name_flex {
     flex-direction: row;
-    align-items: flex-start;
+/*     align-items: flex-start; */
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
