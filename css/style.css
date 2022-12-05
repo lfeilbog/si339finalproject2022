@@ -39,7 +39,7 @@ div.gallery {
 
 #main a:hover {
   color: #89C64F;
-  font-weight: bold;
+  border: 2px solid #89C64F;
 }
 
 #header_logo {
