@@ -463,11 +463,13 @@ div.fact div.blurb {
 .solution_database h2,
 .solution_database h3 {
   padding-left: 15px;
+  padding-right:15px;
   padding-bottom: 20px;
   font-size: 20px;
   padding-top: 10px;
   font-weight: bolder;
   color: #00274C;
+  text-align: center;
 }
 
 div.solution_database h3 {
@@ -498,34 +500,36 @@ div.local-team {
   display: grid;
   grid-template-columns: auto auto;
   height: 50%;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-  grid-row-gap: 10px;
+  /* align-items: start;
+  justify-content: center;
+  justify-items: center; */
+  grid-row-gap: 5px;
   grid-column-gap: 3px;
+  justify-items:center;
+ 
 
 
 }
 
 div.global-team img,
 div.local-team img {
-  width: 230px;
-  height: 230px;
-
-
-
+  width: 170px;
+  height: 170px;
   border: 2px solid #89C64F;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: auto;
 }
 
 
 
-div.global-team img:nth-child(1) {
-  grid-column: 1/1;
+
+
+div.global{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-div.global-team img:nth-child(2) {
-  grid-column: 2/1;
-}
 
 /* .local img {
   width: 190px;
@@ -535,13 +539,13 @@ div.global-team img:nth-child(2) {
 .gallery div.bio-text,
 .bio {
   color: #00274C;
-  font-size: 13px;
+  font-size: 12px;
   padding: 5px;
   position: relative;
   text-align: center;
-  font-weight: bold;
+  /* font-weight: bold; */
   /* background-color: #89C64F; */
-  width: 230px;
+  width: 170px;
   margin: auto;
   justify-content: center;
 
@@ -556,26 +560,21 @@ div.global-team img:nth-child(2) {
   /* color: #F15C31; */
   background-color: white;
   font-weight: normal;
-
-  font-size: 14px;
-  border: 2px solid #00A3D3;
+  padding: 2px;
+  font-size: 12px;
+  /* border: 2px solid #00A3D3; */
+  font-weight: bold;
 }
 
 
 div.global,
 div.local {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 
-div.global-team img:nth-child(1) {
-  grid-column: 1/1;
-}
 
-div.global-team img:nth-child(2) {
-  grid-column: 2/1;
-}
 
 div.local {
   padding-bottom: 10px;
@@ -627,7 +626,7 @@ h3 .design_challenge {
 
 div.Allie img,
 div.Hannah img {
-  height: 300px;
+  height: 200px;
   width: 300px;
   align-items: flex-end;
   display: block;
@@ -684,15 +683,24 @@ div.about-hannah ul {
 
   align-items: stretch;
   background-color: transparent;
-  padding: 10px;
+  padding: 15px;
   color: #00274C;
 
 }
 
 div.Allie li,
 div.Hannah li {
-  padding: 10px;
+padding:14px;
   font-size: 14px;
+  line-height: 1.2;
+  list-style-type: none;
+
+
+}
+div.about-allie > li {
+  padding:14px;
+
+
   line-height: 1.2;
   list-style-type: none;
 
@@ -772,7 +780,7 @@ div.makeathon-teams p {
 
   color: white;
   padding: 10px;
-  font-size: 15px;
+  font-size: 13px;
 
 }
 
@@ -1074,11 +1082,11 @@ div.database {
   } */
 
   .gallery div.bio-text {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   div.bio {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   div.local-team {
