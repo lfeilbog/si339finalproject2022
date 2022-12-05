@@ -1042,13 +1042,13 @@ div.database {
     font-size: 16px;
   }
 
-/*   header {
+ header {
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+   
 
-  } */
+  } 
 
   .impact h1,
   .overview h1,
