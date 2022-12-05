@@ -8,7 +8,11 @@ body {
   color: #4d4d4d;
   font-family: sans-serif, serif, 'Times New Roman';
 }
+a:hover{
+  
+  border: 2px solid #FFCB05;
 
+}
 /* Header, Navigation Bar, Footer */
 header {
   display: flex;
