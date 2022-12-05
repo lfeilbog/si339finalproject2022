@@ -1,0 +1,1770 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: transparent;
+  /* color: #4d4d4d; */
+  color: #4d4d4d;
+  font-family: sans-serif;
+}
+
+/* Header, Navigation Bar, Footer */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00274C;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 3px solid #89C64F;
+  margin-bottom: 5px;
+}
+
+div.gallery {
+  padding-bottom: 10px;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main a {
+  color: inherit;
+}
+
+
+#main a:hover {
+  color: #89C64F;
+  font-weight: bold;
+}
+
+#header_logo {
+  width: 120px;
+  display: flex;
+  justify-content: flex-start;
+  height: fit-content;
+}
+
+/* #footer_logo {
+  width: 120px;
+  height:120px;
+  display: flex;
+  justify-content: flex-start;
+  height: fit-content;
+} */
+
+#main a:visited {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skip a {
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+/*Position the skip class element when it is in focus*/
+.skip a:focus {
+  top: 20px;
+  background: white;
+  color: #00274C;
+  ;
+}
+
+:focus {
+  border: 2px solid;
+}
+
+nav li {
+  display: inline;
+  padding: 5px;
+  font-size: 18px;
+  justify-content: right;
+
+
+}
+
+nav a {
+  color: #FFCB05;
+  /* font-weight: bold; */
+  text-decoration: none;
+
+}
+
+
+
+.nav_links:focus,
+.nav_links:visited {
+  color: #FFCB05;
+}
+
+.nav_links a:hover {
+  color: white;
+  border: 2px solid #FFCB05;
+}
+
+.active_page a {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+footer {
+  /* display: flex;
+  flex-direction: row; */
+  color: #00274C;
+  background-color: #bbb;
+  /* justify-content: space-between;
+  align-items: center; */
+
+
+}
+
+footer p {
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+
+
+/* About Page*/
+.overview h1 {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 22px;
+  color: #F15C31;
+  font-weight: bold;
+}
+
+.overview h2,
+.tom_university h2,
+.tom_university h3 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #00274C;
+  /* color: #00A3D3; */
+}
+
+
+.overview p,
+.tom_university p,
+.solution_database p {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+
+
+
+* {
+  box-sizing: border-box
+}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: auto;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.slideshow {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  align-content: space-between;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: #00A3D3;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 15px;
+  padding: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color:white;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: black;
+  background-color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  z-index: 1;
+  font-weight: bold;
+
+}
+
+div.dots {
+  padding-bottom: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+
+.meaning_of_name h3 {
+  font-weight: bold;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-size: 15px;
+}
+
+.name_flex li:first-child {
+  color: #4d4d4d;
+  background-color: white;
+  padding: 5px;
+  width: 50%;
+  font-size: 15px;
+  border: 2px solid #00A3D3;
+  margin: 5px;
+
+}
+
+
+
+.name_flex li:nth-child(2) {
+  color: #4d4d4d;
+  background-color: white;
+  padding: 5px;
+  width: 50%;
+  font-size: 13px;
+  align-content: center;
+  border: 2px solid #89C64F;
+  margin: 5px;
+}
+
+.name_flex {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.meaning_of_name h2 {
+  color: #00274C;
+  text-align: center;
+  font-weight: 600;
+
+}
+
+.meaning_of_name li {
+  border: solid 1px white;
+  text-align: center;
+}
+
+.meaning_of_name li div {
+  font-weight: bold;
+  padding-bottom: 3px;
+  font-size: 15px;
+}
+
+
+
+div.tom_university img,
+div.Michigan-Comm img,
+div.makeathon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+}
+
+
+
+div.tom_university div.Michigan-Comm {
+  padding: 0;
+}
+
+
+div.tom_university li:nth-child(1),
+.tom_university div {
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+h4.comm-info {
+  font-size: 13px;
+  color: #FFCB05;
+  font-weight: bolder;
+}
+
+.blurb>p {
+  height: auto;
+  width: auto;
+  color: white;
+
+}
+
+div.fact {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  align-items: stretch;
+  background-color: #00274C;
+  padding: 10px;
+}
+
+div.fact div.blurb {
+  padding: 0px;
+}
+
+.blurb p,
+.blurb ul {
+  color: white;
+  text-align: left;
+  font-style: normal;
+}
+
+/* End of About Page*/
+
+/* Team Page*/
+.overview h1,
+.team h1,
+.impact h1,
+.database h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 22px;
+  /* color: #F15C31; */
+  /* color: #00274C; */
+  font-weight: bold;
+  color: #F15C31;
+}
+
+.gallery h2,
+.design_challenge h2,
+.makeathon h2,
+.design_challenge h3,
+.solution_database h2,
+.solution_database h3 {
+  padding-left: 15px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: bolder;
+  color: #00274C;
+}
+
+div.solution_database h3 {
+  padding-top: 10px;
+}
+
+.impact h2 {
+  font-size: 20px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+div.global-team,
+div.local-team {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  grid-row-gap: 10px;
+  grid-column-gap: 3px;
+
+
+}
+
+div.global-team img,
+div.local-team img {
+  width: 230px;
+  height: 230px;
+
+
+
+  border: 2px solid #89C64F;
+}
+
+
+
+div.global-team img:nth-child(1) {
+  grid-column: 1/1;
+}
+
+div.global-team img:nth-child(2) {
+  grid-column: 2/1;
+}
+
+/* .local img {
+  width: 190px;
+  height: 190px;
+} */
+
+.gallery div.bio-text,
+.bio {
+  color: #00274C;
+  font-size: 13px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  /* background-color: #89C64F; */
+  width: 230px;
+  margin: auto;
+  justify-content: center;
+
+  text-decoration: none;
+  /* max-width: 50%;
+  height: auto; */
+}
+
+
+
+.bio {
+  /* color: #F15C31; */
+  background-color: white;
+  font-weight: normal;
+
+  font-size: 14px;
+  border: 2px solid #00A3D3;
+}
+
+
+div.global,
+div.local {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+div.global-team img:nth-child(1) {
+  grid-column: 1/1;
+}
+
+div.global-team img:nth-child(2) {
+  grid-column: 2/1;
+}
+
+div.local {
+  padding-bottom: 10px;
+  /* z-index: 0; */
+}
+
+div.bio {
+  text-align: center;
+}
+
+
+
+.team a,
+.makeathon-teams a {
+  text-decoration: none;
+}
+
+/* End of About Page*/
+
+/* Impact Page */
+div.design_challenge p,
+div.makeathon p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+h3 .design_challenge {
+  margin-left: auto;
+  margin-left: auto;
+}
+
+.design_challenge h3 {
+  color: #4d4d4d;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  /* background-color: #89C64F; */
+  /* border: 2px solid #89C64F; */
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0px;
+}
+
+div.Allie img,
+div.Hannah img {
+  height: 300px;
+  width: 300px;
+  align-items: flex-end;
+  display: block;
+  padding-right: 5px;
+
+}
+
+
+
+div.about-allie,
+div.about-hannah {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  font-size: 13px;
+  padding: 15px;
+
+
+}
+
+
+div.Allie,
+div.Hannah {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+div.Allie ul,
+div.Hannah ul {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  align-items: stretch;
+  background-color: #00274C;
+  padding: 10px;
+  color: white;
+}
+
+div.about-allie ul,
+div.about-hannah ul {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  background-color: transparent;
+  padding: 10px;
+  color: #00274C;
+
+}
+
+div.Allie li,
+div.Hannah li {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  list-style-type: none;
+
+
+}
+
+.design_challenge h3 {
+  padding-left: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-size: 20px;
+
+
+}
+
+div.about-allie li,
+div.about-hannah li {
+  text-align: center;
+}
+
+div.Allie h4,
+div.Hannah h4,
+div.matthew h3,
+div.rebecca h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+
+  font-size: 18px;
+  color: #00274C;
+  ;
+}
+
+div.Allie h4,
+div.Hannah h4 {
+  color: white;
+}
+
+div.matthew h3,
+div.rebecca h3 {
+  line-height: 1.2;
+}
+
+div.mask img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+
+  padding: 15px;
+
+
+}
+
+/* .mask{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+
+} */
+div.mask p {
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+div.makeathon-teams p {
+
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+
+}
+
+div.matthew img {
+  width: 200px;
+  height: 300px;
+}
+
+/* div.makeathon img {
+  padding-bottom: 15px;
+
+} */
+
+div.matthew p,
+div.rebecca p {
+  padding: 15px;
+  padding-top: 2px;
+
+  color: #00274C;
+  font-size: 14px;
+
+}
+
+div.class {
+  font-style: italic;
+  text-align: center;
+  font-weight: 400;
+
+
+
+}
+
+div.makeathon-teams h3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #00274C;
+  font-size: 15px;
+}
+
+div.rebecca,
+div.matthew {
+  border: #FFCB05 2px solid;
+  color: #00274C;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* div.rebecca {
+  background-color: #FFCB05;
+}
+
+div.rebecca p {
+  color: #00274C;
+} */
+
+/* div.rebecca h3 {
+  color: #00274C;
+} */
+
+div.makeathon-teams {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+div.makeathon-teams div.matthew {
+  grid-row: 1/2;
+  grid-column: 2/1;
+}
+
+div.makeathon-teams div.rebecca {
+
+  grid-row: 1/2;
+}
+
+div.makeathon-teams div.learn2 {
+  grid-row: 2/2;
+  grid-column: 2/2;
+}
+
+div.learn1a,
+div.learn2a {
+  display: none;
+}
+
+div.learn2 p,
+div.learn1 p {
+  text-align: center;
+  background-color: #FFCB05;
+  color: #00274C;
+  margin: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+div.learn2,
+div.learn1 {
+  padding-top: 0px;
+
+}
+
+
+
+div.learn2,
+div.learn1 {
+  text-decoration: none;
+}
+
+/* End of Impact Page*/
+
+/* Global Database Page */
+div.solution_database h3 {
+  padding-bottom: 5px;
+}
+
+div.products {
+
+  display: flex;
+  /* flex-direction: column;
+justify-content: space-evenly;
+gap: 5px;
+align-items: center;
+width:50%;
+flex-wrap: wrap; */
+  /* align-content: space-around; */
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  /* justify-content: space-around; */
+
+  align-items: normal;
+  justify-content: space-evenly;
+
+}
+
+div.products img {
+  width: 200px;
+  height: 150px;
+  border: 3px solid #89C64F;
+  margin: 5px;
+}
+
+
+div.details h4 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #00274C;
+  ;
+  padding-left: 15px;
+
+
+
+
+}
+
+.view-bio {
+  display: none;
+}
+
+.solution_database h2 {
+  padding-bottom: 0px;
+}
+
+div.details p {
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 0px;
+}
+
+div.details {
+  display: inline;
+  /* margin: 2px; */
+  width: 200px;
+  height: 180px;
+  overflow: scroll;
+  text-align: center;
+}
+
+
+
+div.database {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* End of Global Database Page*/
+
+@media screen and (min-width: 600px) {
+
+  nav li {
+
+    padding: 10px;
+
+
+
+  }
+
+  div.products:last-child div.details {
+    height: fit-content;
+  }
+
+  .impact h2 {
+    font-size: 22px;
+
+
+
+  }
+
+  div.rebecca,
+  div.matthew {
+    border: none;
+  }
+
+  div.Allie h4,
+  div.Hannah h4 {
+    color: #00274C;
+  }
+
+  div.Allie ul,
+  div.Hannah ul {
+    border: 5px solid #00A3D3;
+  }
+
+  div.Allie ul:nth-child(2),
+  div.Hannah ul:nth-child(2) {
+    border: none;
+  }
+
+  div.rebecca,
+  div.matthew {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+  }
+
+  .impact h1,
+  .overview h1,
+  .team h1,
+  .database h1 {
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    font-size: 22px;
+  }
+
+  h4.comm-info {
+    font-size: 16px;
+  }
+
+  .overview p,
+  .tom_university p {
+    font-size: 16px;
+  }
+
+
+  div.meaning_of_name {
+    margin: 10px;
+  }
+
+  div.meaning_of_name,
+  div.meaning_of_name .name_flex li {
+    font-size: 14px;
+  }
+
+  /* img div.global-team,
+  .gallery .global-team .bio-text {
+    max-width: 100%;
+    height: auto;
+  } */
+
+  .gallery div.bio-text {
+    font-size: 13px;
+  }
+
+  div.bio {
+    font-size: 14px;
+  }
+
+  div.local-team {
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+  }
+
+  div.global-team img {
+    width: 250px;
+    height: 250px;
+  }
+
+  div.global div.bio-text {
+    width: 250px;
+  }
+
+  div.global {
+    margin: 0px;
+
+  }
+
+  div.local {
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+
+  div.local img {
+    width: 195px;
+    height: 195px;
+  }
+
+  div.local-team,
+  div.local div.bio-text,
+  div.local div.bio {
+    grid-row-gap: 5px;
+    grid-column-gap: 3px;
+    margin: auto;
+    width: auto;
+
+
+  }
+
+  div.local div.bio-text {
+    font-size: 12px;
+  }
+
+  .local-team div.bio {
+    font-size: 12px;
+  }
+
+
+  /* justify-items: stretch;
+    grid-column: 1/1; */
+
+
+
+  div.local:nth-child(7) {
+    grid-row: 3/3;
+    grid-column: 1 / 3;
+
+  }
+
+  div.local:nth-child(8) {
+
+    grid-column: -1 / -3;
+    grid-row: 3/3;
+
+  }
+
+  .slideshow {
+    display: contents;
+    z-index: 0;
+  }
+
+  .numbertext {
+    z-index: 0;
+  }
+
+  .design_challenge h3 {
+    margin: 0px;
+    text-align: left;
+    max-width: 0px;
+
+
+  }
+
+  .design_challenge h3 br {
+    display: inline;
+  }
+
+  div.Allie,
+  div.Hannah {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  div.Allie ul,
+  div.Hannah ul {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #00274C;
+    background-color: transparent;
+    font-weight: 600;
+    padding: 10px;
+
+  }
+
+  div.Allie li,
+  div.Hannah li {
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 400;
+  }
+
+  div.Allie img,
+  div.Hannah img {
+    height: 300px;
+    width: 300px;
+    align-items: flex-end;
+    display: block;
+    padding-right: 5px;
+  }
+
+  div.about-allie,
+  div.about-hannah {
+    flex-direction: column;
+
+  }
+
+  div.learn1,
+  div.learn2 {
+    display: none;
+  }
+
+  div.learn1a,
+  div.learn2a {
+    display: contents;
+  }
+
+  div.makeathon-teams img {
+    height: 300px;
+    width: 250px;
+  }
+
+  div.Hannah h3,
+  div.Allie h3 {
+    color: #00274C;
+    background-color: transparent;
+    font-size: 20px;
+  }
+
+  div.about-allie ul li,
+  div.about-hannah ul li {
+    font-size: 16px;
+    color: #00274C;
+    font-weight: 500;
+  }
+
+  /* div.makeathon-teams {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+  div.design_challenge h3 {
+    margin-left: auto;
+    margin-right: auto;
+    /* padding:0px; */
+  }
+
+  div.mask p {
+    display: none;
+  }
+
+  /* div.makeathon div.matthew{
+  color: #00274C;
+  background-color: white;
+  border: #00274C solid 2px;
+} */
+  div.makeathon div.rebecca {
+    grid-row: 1/2;
+    grid-column: 2/2;
+  }
+
+  div.rebecca h3,
+  div.matthew h3 {
+
+
+    color: #00274C;
+    font-size: 17px;
+    text-align: center;
+
+  }
+
+  div.rebecca p,
+  div.matthew p {
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0px;
+    color: #00274C;
+
+  }
+
+  div.makeathon-teams {
+    /* padding: 15px; */
+    padding-top: 0px;
+
+  }
+
+  div.makeathon-teams div.rebecca,
+  div.makeathon-teams div.matthew {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+  }
+
+  div.mask img {
+    width: 100%;
+  }
+
+  div.rebecca img,
+  div.matthew img {
+    width: 290px;
+    height: 290px;
+
+  }
+
+  .solution_database h2,
+  div.solution_database p {
+    text-align: center;
+
+  }
+
+  div.solution_database p {
+    font-size: 16px;
+  }
+
+  div.database {
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+
+  }
+
+  div.products:last-child {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  div.products:last-child img {
+    width: 350px;
+
+  }
+
+  div.products:last-child div.details {
+    width: 90%;
+
+  }
+
+
+
+  /* div.details:last-child{
+    width: 500px;
+  } */
+
+  div.products {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+    width: 50%;
+    flex-wrap: nowrap;
+
+  }
+
+  .design_challenge h3 {
+    max-width: fit-content;
+
+  }
+
+  div.makeathon img {
+    padding-bottom: 5px;
+  }
+
+  div.products img {
+    width: 290px;
+    height: 240px;
+  }
+
+  div.slideshow-container {
+    width: 550px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+
+  /* div.details p{
+    font-size: 16px;
+  } */
+  body,
+  div.solution_database p {
+    font-size: 18px;
+  }
+
+  div.learn1a img,
+  div.learn2a img {
+    width: 350px;
+    height: 300px;
+  }
+
+
+  div.Allie ul,
+  div.Hannah ul {
+    border: none;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  div.overview .name_flex {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.overview .name_flex li:nth-child(2),
+  div.overview .name_flex li:first-child {
+    font-size: 17px;
+  }
+
+  div.meaning_of_name h2 {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .meaning_of_name li div {
+    font-size: 18px;
+  }
+
+  div.slideshow-container {
+    width: 700px;
+  }
+
+  div.blurb p,
+  h4.comm-info {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  div.blurb p {
+    color: #00274C;
+    font-weight: 600;
+  }
+
+  h4.comm-info {
+    background-color: #00274C;
+    padding: 10px;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+
+  }
+
+  div.fact {
+    background-color: transparent;
+    /* border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 2px solid #00274C; */
+
+
+  }
+
+  .team div.local-team {
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+  }
+
+  div.local:nth-child(7) {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  div.local:nth-child(8) {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  div.global-team {
+    justify-content: flex-start;
+    margin: 15px;
+    grid-template-columns: auto;
+  }
+
+  div.global a {
+    display: none;
+  }
+
+  div.view-bio {
+    display: contents;
+    padding: 15px;
+    font-size: 16px;
+    color: #00274C;
+    ;
+    /* font-weight: medium; */
+    line-height: 1.4;
+    margin: 10px;
+  }
+
+  div.global-team {
+    grid-template-columns: auto auto;
+    row-gap: 5px;
+    column-gap: 15px;
+
+  }
+
+  div.about-allie,
+  div.about-hannah {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+
+  }
+
+  div.about-allie ul,
+  div.about-hannah ul {
+    height: 100px;
+    text-align: left;
+  }
+
+  div.group div.Hannah h3,
+  div.group div.Allie h3 {
+
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: auto;
+    background-color: transparent;
+  }
+
+  div.Allie img,
+  div.Hannah img {
+    padding: 0px;
+    margin: auto;
+  }
+
+  /* div.Allie ul, div.Hannah ul{
+justify-content: center;
+} */
+  div.makeathon img {
+    max-width: 700px;
+  }
+
+  .overview p,
+  .team p,
+  .impact p,
+  .database p,
+  .design_challenge p,
+  div.Allie li,
+  div.Hannah li,
+  div.design_challenge p,
+  div.makeathon p {
+    font-size: 16px;
+  }
+
+  .impact div.makeathon {
+    margin-right: 10px;
+
+
+  }
+
+  .impact div.makeathon p {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .impact div.makeathon div.matthew p,
+  .impact div.makeathon div.rebecca p {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+  }
+
+  div.group div.Allie,
+  div.group div.Hannah {
+
+
+    border: #00274C 2px solid;
+
+  }
+
+  div.Allie ul,
+  div.Hannah ul {
+    padding: 0px;
+    padding-top: 5px;
+    justify-content: center
+  }
+
+  .design_challenge h3 {
+    text-align: center;
+  }
+
+  div.group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 3px;
+    column-gap: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  div.about-allie,
+  div.about-hannah {
+    padding-bottom: 0px;
+  }
+
+  div.Allie div.mask img {
+    width: 90%;
+    height: auto;
+    padding-bottom: 5px;
+
+
+  }
+
+  div.products {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    width: 33%;
+    flex-wrap: nowrap;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  div.details {
+    display: inline;
+    /* margin-left: auto;
+  margin-right: auto; */
+    width: fit-content;
+    margin: 0px;
+
+    text-align: center;
+  }
+
+  div.details p {
+    font-size: 16px;
+  }
+
+  div.products img {
+    margin: 0px;
+  }
+
+  div.products:last-child {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    width: 33%;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+    margin: 0px;
+
+
+  }
+
+  div.products:last-child img {
+    width: 290px;
+    height: 240px;
+    padding: 0px;
+
+  }
+
+  div.products:last-child div.details {
+    width: fit-content;
+    height: 180px;
+
+  }
+
+  div.details h4 {
+    font-size: 18px;
+    padding-top: 2px;
+  }
+
+}
+
+
+/* Contact Page */
+/* .contact * {
+  box-sizing: border-box;
+}
+
+.contact h1 {
+  padding-top: 30px;
+  padding-left: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-25 {
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
