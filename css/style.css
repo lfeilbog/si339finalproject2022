@@ -631,8 +631,8 @@ label {
   display: inline-block;
 }
 input[type=submit] {
-  color: #FFCB05;
-  background: #00274C;
+  color: white;
+  background: black;
   padding: 12px 20px;
   border: none;
   border-radius: 20px;
