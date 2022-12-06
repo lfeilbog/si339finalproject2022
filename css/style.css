@@ -1114,12 +1114,6 @@ textarea{
     grid-row: 2;
   }
 
-  div.global-team {
-    justify-content: flex-start;
-    margin: 15px;
-    grid-template-columns: auto;
-    
-  }
 
   div.global a {
     display: none;
@@ -1140,6 +1134,7 @@ textarea{
     grid-template-columns: auto auto;
     row-gap: 5px;
     column-gap: 15px;
+    margin: 15px;
 
   }
 
