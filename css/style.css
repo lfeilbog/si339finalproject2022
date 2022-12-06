@@ -1000,7 +1000,7 @@ textarea{
 }
 
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 1000px) {
   h1{
     font-size: 32px;
   }
