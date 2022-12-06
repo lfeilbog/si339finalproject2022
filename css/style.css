@@ -1119,23 +1119,23 @@ textarea{
     display: none;
   }
 
+  
+
+  div.global-team {
+    grid-template-columns: auto auto;
+     grid-template-rows: auto auto;
+    row-gap: 5px;
+    column-gap: 15px;
+    margin: 15px;
+
+  }
   div.view-bio {
     display: contents;
     padding: 15px;
     font-size: 17px;
     color: #00274C;
-    
-
     line-height: 1.4;
     margin: 10px;
-  }
-
-  div.global-team {
-    grid-template-columns: auto auto;
-    row-gap: 5px;
-    column-gap: 15px;
-    margin: 15px;
-
   }
 
   div.about-allie,
