@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Join Us</title>
+</head>
+
+<body>
+    <div class="skip"> <a href="#main">Skip to Main Content</a></div>
+    <header>
+        <img src="images/header.png" alt="Tikkun Olam Makers logo (colored)" id="header_logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="globaldatabase.html">Solutions</a></li>
+                <li class="active_page"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact" id="main">
+            <div class="alert">
+               
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <h1>Support TOM's Global Movement!</h1>
+                Help us reach our moonshot goal: changing the lives of 250,000,000 people around the world<br>
+                Click  <a href="https://app.etapestry.com/onlineforms/AmericanFriendsofTheReutInsti/donateTOM.html">
+                    here</a> to donate to TOM Global! 
+                    <p>Click on the "x" symbol to close the alert message.</p>
+        
+          
+           
+        </div>
+
+
+        <h2>Contact TOM: Michigan</h2>
+        <div class="container">
+            <form action="https://formspree.io/f/xnqrepkv" method="POST">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Enter Your Email..">
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-25">
+                        <label for="role">Select One</label>
+                    </div>
+                    <div class="col-75">
+                        <!-- <option value="need-knower">Need Knower</option>
+							<option value="maker">Maker</option>
+							<option value="other">Other</option> -->
+                        <input type="radio" id="need-knower" name="role" value="Need Knower">
+                        <label for="need-knower">Need Knower</label><br>
+                        <input type="radio" id="maker" name="role" value="Maker">
+                        <label for="maker">Maker</label><br>
+                        <input type="radio" id="other" name="role" value="Other">
+                        <label for="other">Other</label>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write your message here.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p> TOM: Michigan</br>TOM@University</p>
+
+
+       
+
+
+    </footer>
+</body>
+
+</html>
