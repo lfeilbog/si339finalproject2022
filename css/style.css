@@ -1122,7 +1122,6 @@ textarea{
   
 
   div.global-team {
-    grid-template-columns: auto auto;
      grid-template-rows: auto auto;
     row-gap: 5px;
     column-gap: 15px;
