@@ -35,6 +35,7 @@ div.gallery {
 
 #main a {
   color: inherit;
+  font-weight: bold;
 }
 
 
@@ -110,7 +111,7 @@ footer {
   background-color: #bbb;
 }
 
-footer p {
+footer div {
   text-align: center;
   font-size: 18px;
   padding: 15px;
@@ -118,29 +119,8 @@ footer p {
 }
 
 
-.contact h1, .contact h2 {
-  text-align: center;
-  padding-top: 5px;
-  font-size: 22px;
-  color: #F15C31;
-  font-weight: bold;
-}
 
-.overview h2,
-.tom_university h2,
-.tom_university h3 {
-  padding-top: 15px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
-  color: #00274C;
-}
-
-.overview p,
-.tom_university p,
-.solution_database p {
+p{
   padding-top: 10px;
   padding-bottom: 5px;
   padding-left: 15px;
@@ -161,7 +141,6 @@ img {
   vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container {
   width: auto;
   height: fit-content;
@@ -176,7 +155,6 @@ img {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -194,20 +172,17 @@ img {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 15px;
   padding: 10px;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color:white;
 }
 
-/* Caption text */
 .text {
   color: white;
   font-size: 15px;
@@ -220,7 +195,6 @@ img {
   background-color: black;
 }
 
-/* Number text (1/4 etc) */
 .numbertext {
   color: black;
   background-color: white;
@@ -233,28 +207,13 @@ img {
   font-weight: bold;
 }
 
-div.dots {
-  padding-bottom: 5px;
-}
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
- 
-}
 
 .active,
 .dot:hover {
   background-color: #717171;
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
   .next,
@@ -262,13 +221,6 @@ div.dots {
     font-size: 11px
   }
 }
-
-/* .meaning_of_name h3 {
-  font-weight: bold;
-  padding-bottom: 2px;
-  padding-top: 2px;
-  font-size: 15px;
-} */
 
 .name_flex li:first-child {
   color: #4d4d4d;
@@ -379,13 +331,14 @@ div.fact div.blurb {
   font-style: normal;
 }
 
-/* End of About Page*/
-
-/* Team Page*/
-.overview h1,
-.team h1,
-.impact h1,
-.database h1 {
+  h2, h3#Michigan-Comm, div.solution_database h3{
+  padding:15px;
+  text-align: center;
+  color: #00274C;
+  font-weight: bold;
+  font-size:20px;
+  }
+  h1, .contact h2{
   text-align: center;
   padding-top: 15px;
   font-size: 22px;
@@ -393,57 +346,24 @@ div.fact div.blurb {
   color: #F15C31;
 }
 
-.gallery h2,
-.design_challenge h2,
-.makeathon h2,
-.design_challenge h3,
-.solution_database h2,
-.solution_database h3 {
-  padding-left: 15px;
-  padding-right:15px;
-  padding-bottom: 20px;
-  font-size: 20px;
-  padding-top: 10px;
-  font-weight: bolder;
-  color: #00274C;
-  text-align: center;
-}
-
 div.solution_database h3 {
   padding-top: 10px;
-}
-
-.impact h2 {
-  font-size: 20px;
-  padding-left: 15px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
 }
 
 div.global-team,
 div.local-team {
   display: grid;
-  grid-template-columns: auto auto;
-  height: 50%;
+  grid-template-columns: auto;
   grid-row-gap: 5px;
   grid-column-gap: 3px;
   justify-items:center;
-
-}
-div.global-team{
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
 }
 
 div.global-team img,
 div.local-team img {
-  width: 170px;
-  height: 170px;
   border: 2px solid #89C64F;
   margin-left: auto;
   margin-right: auto;
-  align-self: auto;
 }
 
 div.global{
@@ -454,35 +374,39 @@ div.global{
 .gallery div.bio-text,
 .bio {
   color: #00274C;
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px;
   position: relative;
   text-align: center;
-  width: 170px;
   margin: auto;
-  justify-content: center;
   text-decoration: none;
 }
 
 .bio {
   background-color: white;
-  padding: 2px;
+  padding: 5px;
   font-size: 12px;
   font-weight: bold;
-}
+  text-align: center;
+  border: 2px solid #00A3D3;
+  border-radius: 60px;
 
-div.global,
-div.local {
-  margin-left: 2px;
-  margin-right: 2px;
+}
+.bio:hover, div.learn2 div:hover, div.learn1 div:hover{
+  transform: scale(1.1);
+  font-weight: bold;
+}
+@media (prefers-reduced-motion: reduce) {
+
+
+  .bio:hover, div.learn2 div:hover, div.learn1 div:hover{
+    transform: scale(1);
+ }
+
 }
 
 div.local {
   padding-bottom: 10px;
-}
-
-div.bio {
-  text-align: center;
 }
 
 .team a,
@@ -490,23 +414,7 @@ div.bio {
   text-decoration: none;
 }
 
-/* End of About Page*/
 
-/* Impact Page */
-div.design_challenge p,
-div.makeathon p {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 16px;
-  line-height: 1.3;
-}
-
-/* h3 .design_challenge {
-  margin-left: auto;
-  margin-left: auto;
-} */
 
 .design_challenge h3 {
   color: #4d4d4d;
@@ -517,16 +425,6 @@ div.makeathon p {
   padding: 15px;
   text-align: center;
   font-size: 18px;
-  margin: 0px;
-}
-
-div.Allie img,
-div.Hannah img {
-  height: 200px;
-  width: 300px;
-  align-items: flex-end;
-  display: block;
-  padding-right: 5px;
 }
 
 div.about-allie,
@@ -535,7 +433,6 @@ div.about-hannah {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 5px;
   font-size: 13px;
   padding: 15px;
 }
@@ -549,73 +446,25 @@ div.Hannah {
 
 div.Allie ul,
 div.Hannah ul {
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
   display: flex;
   flex-direction: column;
-  font-size: 14px;
   align-items: stretch;
   background-color: #00274C;
-  padding: 10px;
   color: white;
 }
 
-/* div.about-allie ul,
-div.about-hannah ul {
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background-color: transparent;
-  padding: 15px;
-  color: #00274C;
-} */
 
 div.Allie li,
 div.Hannah li {
-padding:14px;
-  font-size: 14px;
-  line-height: 1.2;
-  list-style-type: none;
-}
-
-/* div.about-allie > li {
   padding:14px;
+  font-size: 15px;
   line-height: 1.2;
   list-style-type: none;
-} */
-
-.design_challenge h3 {
-  padding-left: 0px;
-  padding-bottom: 0px;
-  text-align: left;
-  font-size: 20px;
-}
-
-/* div.about-allie li,
-div.about-hannah li {
-  text-align: center;
-} */
-
-div.Allie h4,
-div.Hannah h4,
-div.matthew h3,
-div.rebecca h3 {
-  font-weight: bold;
-  padding-bottom: 10px;
-  font-size: 18px;
-  color: #00274C;
-  ;
 }
 
 div.Allie h4,
 div.Hannah h4 {
-  color: white;
+  font-size: 17px;
 }
 
 div.matthew h3,
@@ -641,27 +490,12 @@ div.mask p {
   padding-bottom: 10px;
 }
 
-div.makeathon-teams p {
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  color: white;
-  padding: 10px;
-  font-size: 13px;
-}
-
-div.matthew img {
-  width: 200px;
-  height: 300px;
-}
-
 div.matthew p,
 div.rebecca p {
   padding: 15px;
   padding-top: 2px;
   color: #00274C;
-  font-size: 14px;
+  
 }
 
 div.class {
@@ -671,12 +505,10 @@ div.class {
 }
 
 div.makeathon-teams h3 {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding:10px 15px;
   color: #00274C;
   font-size: 15px;
+  font-weight: bold;
 }
 
 div.rebecca,
@@ -713,13 +545,10 @@ div.makeathon-teams div.learn2 {
   grid-column: 2/2;
 }
 
-div.learn1a,
-div.learn2a {
-  display: none;
-}
 
-div.learn2 p,
-div.learn1 p {
+
+div.learn2 div,
+div.learn1 div {
   text-align: center;
   background-color: #FFCB05;
   color: #00274C;
@@ -728,40 +557,38 @@ div.learn1 p {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  padding:10px;
 }
 
 div.learn2,
 div.learn1 {
-  padding-top: 0px;
   text-decoration: none;
 }
 
 
-/* End of Impact Page*/
-
-/* Global Database Page */
-div.solution_database h3 {
-  padding-bottom: 5px;
-}
-
 div.products {
   display: flex;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding:5px 0px;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  align-items: normal;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
 }
 
 div.products img {
-  width: 200px;
-  height: 150px;
+height:auto;
   border: 3px solid #89C64F;
   margin: 5px;
 }
 
+div.database {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
 
 div.details h4 {
   font-weight: bold;
@@ -778,29 +605,6 @@ div.details h4 {
   padding-bottom: 0px;
 }
 
-div.details p {
-  font-size: 14px;
-  line-height: 1.2;
-  padding-bottom: 0px;
-}
-
-div.details {
-  display: inline;
-  width: 200px;
-  height: 180px;
-  overflow: scroll;
-  text-align: center;
-}
-
-div.database {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-/* End of Global Database Page*/
-/* Contact Page */
 .contact * {
   box-sizing: border-box;
 }
@@ -808,10 +612,6 @@ div.database {
   margin: 5px;
 }
 .contact h1 {
-
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
   color:#00274C;
 }
 form{
@@ -831,8 +631,8 @@ label {
   display: inline-block;
 }
 input[type=submit] {
-  background-color: #F15C31;
-  color: white;
+  color: #FFCB05;
+  background: #00274C;
   padding: 12px 20px;
   border: none;
   border-radius: 20px;
@@ -870,13 +670,6 @@ input[type=submit]:hover {
   border-radius: 50px;
   text-align: center;
   line-height: 1.4;
-  
-}
-.alert p{
-  text-align: center;
-  font-size: 12px;
-  padding-top: 5px;
-  padding-bottom: 0px;
 }
 .closebtn {
   margin-left: 15px;
@@ -909,8 +702,17 @@ textarea{
   margin-top: 0;
 }
 
-/* End of Contact Page */
 @media screen and (min-width: 600px) {
+  p{
+    font-size:16px;
+  }
+  h1{
+    font-size: 28px;
+  }
+  h2, .meaning_of_name h2, h3#Michigan-Comm, div.solution_database h3{
+    font-size: 22px;
+    color:#00274C
+  }
   .col-25, .col-75, input[type=submit] {
     width: 85%;
   }
@@ -927,13 +729,11 @@ textarea{
     height: fit-content;
   }
 
-  .impact h2 {
-    font-size: 22px;
-  }
+  
 
   div.rebecca,
   div.matthew {
-    border: none;
+    margin: 10px;
   }
 
   div.Allie h4,
@@ -946,16 +746,7 @@ textarea{
     border: 5px solid #00A3D3;
   }
 
-  /* div.Allie ul:nth-child(2),
-  div.Hannah ul:nth-child(2) {
-    border: none;
-  } */
-
-  div.rebecca,
-  div.matthew {
-    margin: 0px;
-    padding: 0px;
-  }
+ 
 
   .nav_links {
     display: flex;
@@ -964,24 +755,11 @@ textarea{
     font-size: 16px;
   }
 
-  .impact h1,
-  .overview h1,
-  .team h1,
-  .database h1 {
-    text-align: left;
-    padding-left: 15px;
-    padding-bottom: 20px;
-    font-size: 22px;
-  }
-
   h4.comm-info {
     font-size: 16px;
   }
 
-  .overview p,
-  .tom_university p {
-    font-size: 16px;
-  }
+
 
 
   div.meaning_of_name {
@@ -994,60 +772,27 @@ textarea{
   }
 
   .gallery div.bio-text {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   div.bio {
-    font-size: 12px;
+    font-size: 16px;
   }
   div.global-team {
     grid-template-columns: auto auto;
-    justify-content: space-around;
+   justify-content: center;
+   column-gap: 20px;
   }
   div.local-team {
     grid-template-columns: auto auto auto;
     justify-content: space-around;
   }
-
-  div.global-team img {
-    width: 250px;
-    height: 250px;
-  }
-
-  div.global div.bio-text {
-    width: 250px;
-  }
-
-  div.global {
-    margin: 0px;
-  }
-
-  div.local {
-    margin: 0px;
-    padding: 0px;
-  }
-
-
-  div.local img {
-    width: 195px;
-    height: 195px;
-  }
-
-  div.local-team,
-  div.local div.bio-text,
-  div.local div.bio {
-    grid-row-gap: 5px;
-    grid-column-gap: 3px;
-    margin: auto;
-    width: auto;
-  }
-
   div.local div.bio-text {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .local-team div.bio {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   div.local:nth-child(7) {
@@ -1074,13 +819,8 @@ textarea{
     margin: 0px;
     text-align: left;
     max-width: 0px;
-
-
   }
 
-  /* .design_challenge h3 br {
-    display: inline;
-  } */
 
   div.Allie,
   div.Hannah {
@@ -1123,15 +863,6 @@ textarea{
 
   }
 
-  div.learn1,
-  div.learn2 {
-    display: none;
-  }
-
-  div.learn1a,
-  div.learn2a {
-    display: contents;
-  }
 
   div.makeathon-teams img {
     height: 300px;
@@ -1145,12 +876,6 @@ textarea{
     font-size: 20px;
   }
 
-  /* div.about-allie ul li,
-  div.about-hannah ul li {
-    font-size: 16px;
-    color: #00274C;
-    font-weight: 500;
-  } */
 
 
   div.design_challenge h3 {
@@ -1183,7 +908,6 @@ textarea{
   div.matthew p {
     text-align: center;
     justify-content: center;
-    font-size: 16px;
     padding: 0px;
     color: #00274C;
 
@@ -1196,8 +920,6 @@ textarea{
   div.makeathon-teams div.rebecca,
   div.makeathon-teams div.matthew {
     padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: transparent;
   }
 
@@ -1205,25 +927,23 @@ textarea{
     width: 100%;
   }
 
-  div.rebecca img,
-  div.matthew img {
-    width: 290px;
-    height: 290px;
-  }
+
 
   .solution_database h2,
   div.solution_database p {
     text-align: center;
   }
 
-  div.solution_database p {
-    font-size: 16px;
-  }
+ 
 
   div.database {
     flex-direction: row;
     align-items: center;
     align-content: space-between;
+  }
+
+  div.products{
+    margin:0px;
   }
 
   div.products:last-child {
@@ -1272,12 +992,25 @@ textarea{
   div.slideshow-container {
     width: 550px;
   }
+  div.details h4{
+    text-align: center;
+  }
 
 
 }
 
 
 @media screen and (min-width: 900px) {
+  h1{
+    font-size: 32px;
+  }
+  h2, .meaning_of_name h2, h3#Michigan-Comm, div.solution_database h3{
+    font-size: 25px;
+    color:#00274C
+  }
+  p{
+    font-size:18px;
+  }
   .alert{
     margin-left: auto;
     margin-right: auto;
@@ -1291,11 +1024,11 @@ textarea{
     font-size: 18px;
   }
 
-  div.learn1a img,
+  /* div.learn1a img,
   div.learn2a img {
     width: 350px;
     height: 300px;
-  }
+  } */
 
 
   div.Allie ul,
@@ -1395,7 +1128,7 @@ textarea{
   div.view-bio {
     display: contents;
     padding: 15px;
-    font-size: 16px;
+    font-size: 17px;
     color: #00274C;
     
 
@@ -1418,11 +1151,6 @@ textarea{
 
   }
 
-  /* div.about-allie ul,
-  div.about-hannah ul {
-    height: 100px;
-    text-align: left;
-  } */
 
   div.group div.Hannah h3,
   div.group div.Allie h3 {
@@ -1441,40 +1169,22 @@ textarea{
 
 
   div.makeathon img {
-    max-width: 700px;
+    max-width: 80%;
   }
 
-  .overview p,
-  .team p,
-  .impact p,
-  .database p,
-  .design_challenge p,
-  div.Allie li,
-  div.Hannah li,
-  div.design_challenge p,
-  div.makeathon p {
-    font-size: 16px;
-  }
+
 
   .impact div.makeathon {
     margin-right: 10px;
   }
 
-  .impact div.makeathon p {
-    margin: auto;
+  div.rebecca, div.matthew {
+  margin:10px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  .impact div.makeathon div.matthew p,
-  .impact div.makeathon div.rebecca p {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
 
-  }
 
   div.group div.Allie,
   div.group div.Hannah {
