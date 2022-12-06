@@ -263,12 +263,12 @@ div.dots {
   }
 }
 
-.meaning_of_name h3 {
+/* .meaning_of_name h3 {
   font-weight: bold;
   padding-bottom: 2px;
   padding-top: 2px;
   font-size: 15px;
-}
+} */
 
 .name_flex li:first-child {
   color: #4d4d4d;
@@ -503,10 +503,10 @@ div.makeathon p {
   line-height: 1.3;
 }
 
-h3 .design_challenge {
+/* h3 .design_challenge {
   margin-left: auto;
   margin-left: auto;
-}
+} */
 
 .design_challenge h3 {
   color: #4d4d4d;
@@ -562,7 +562,7 @@ div.Hannah ul {
   color: white;
 }
 
-div.about-allie ul,
+/* div.about-allie ul,
 div.about-hannah ul {
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -574,7 +574,7 @@ div.about-hannah ul {
   background-color: transparent;
   padding: 15px;
   color: #00274C;
-}
+} */
 
 div.Allie li,
 div.Hannah li {
@@ -584,11 +584,11 @@ padding:14px;
   list-style-type: none;
 }
 
-div.about-allie > li {
+/* div.about-allie > li {
   padding:14px;
   line-height: 1.2;
   list-style-type: none;
-}
+} */
 
 .design_challenge h3 {
   padding-left: 0px;
@@ -597,10 +597,10 @@ div.about-allie > li {
   font-size: 20px;
 }
 
-div.about-allie li,
+/* div.about-allie li,
 div.about-hannah li {
   text-align: center;
-}
+} */
 
 div.Allie h4,
 div.Hannah h4,
@@ -946,10 +946,10 @@ textarea{
     border: 5px solid #00A3D3;
   }
 
-  div.Allie ul:nth-child(2),
+  /* div.Allie ul:nth-child(2),
   div.Hannah ul:nth-child(2) {
     border: none;
-  }
+  } */
 
   div.rebecca,
   div.matthew {
@@ -1078,9 +1078,9 @@ textarea{
 
   }
 
-  .design_challenge h3 br {
+  /* .design_challenge h3 br {
     display: inline;
-  }
+  } */
 
   div.Allie,
   div.Hannah {
@@ -1145,12 +1145,12 @@ textarea{
     font-size: 20px;
   }
 
-  div.about-allie ul li,
+  /* div.about-allie ul li,
   div.about-hannah ul li {
     font-size: 16px;
     color: #00274C;
     font-weight: 500;
-  }
+  } */
 
 
   div.design_challenge h3 {
@@ -1190,9 +1190,7 @@ textarea{
   }
 
   div.makeathon-teams {
-
     padding-top: 0px;
-
   }
 
   div.makeathon-teams div.rebecca,
@@ -1211,13 +1209,11 @@ textarea{
   div.matthew img {
     width: 290px;
     height: 290px;
-
   }
 
   .solution_database h2,
   div.solution_database p {
     text-align: center;
-
   }
 
   div.solution_database p {
@@ -1228,7 +1224,6 @@ textarea{
     flex-direction: row;
     align-items: center;
     align-content: space-between;
-
   }
 
   div.products:last-child {
@@ -1249,7 +1244,6 @@ textarea{
 
   div.products:last-child div.details {
     width: 90%;
-
   }
 
 
@@ -1260,12 +1254,10 @@ textarea{
     align-items: center;
     width: 50%;
     flex-wrap: nowrap;
-
   }
 
   .design_challenge h3 {
     max-width: fit-content;
-
   }
 
   div.makeathon img {
@@ -1293,7 +1285,6 @@ textarea{
   }
   .col-25, .col-75, input[type=submit] {
     width: 75%;
-  
   }
   body,
   div.solution_database p {
@@ -1427,11 +1418,11 @@ textarea{
 
   }
 
-  div.about-allie ul,
+  /* div.about-allie ul,
   div.about-hannah ul {
     height: 100px;
     text-align: left;
-  }
+  } */
 
   div.group div.Hannah h3,
   div.group div.Allie h3 {
